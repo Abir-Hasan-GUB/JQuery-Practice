@@ -1,0 +1,13 @@
+.style1{
+    font-size: 160px;
+    font-style: italic;
+}
+.style2{
+    color: green;
+}
+.style3{
+    background-color: red;
+    width: 174px;
+    text-align: center;
+    color: #fff;
+}
