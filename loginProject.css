@@ -1,0 +1,10 @@
+.loginFrame{
+    margin: 0 auto;
+    height: 200px;
+    width: 350px;
+    margin-top: 15%;
+  
+}
+#pass1,#pass2{
+    display: inline-block;
+}
