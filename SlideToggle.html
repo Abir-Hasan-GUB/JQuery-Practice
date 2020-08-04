@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+
+    <style>
+     .btn{
+         margin: auto;
+         width: 50%;
+         height: 35px;
+         background-color: red;
+         font-size: 30px;
+         text-align: center;
+         cursor: pointer;
+     }
+
+     .text{
+        margin: auto;
+         width: 50%;
+         height: 100px;
+         background-color: orange;
+         font-size: 30px;
+         text-align: center;
+         line-height: 100px;
+     }
+      
+    </style>
+
+</head>
+<body>
+<div class="btn">Click Here</div>
+<div class="text">Click Button For Slide Show</div>
+    
+    
+   
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+         $(".btn").click(function(){
+            // $(".text").slideDown('slow');
+            // $(".text").slideUp('slow');
+            $(".text").slideToggle('slow');
+         })
+      })
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back</title>
+
+    <style>
+   button{
+       cursor: pointer;
+   }
+ 
+    </style>
+
+</head>
+<body> 
+
+    <button>Toggle</button>
+
+    <h1>Please Enter in This Area</h1>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+         $("button").click(function(){
+             $("h1").toggle('slow',function(){
+                 alert("By Friends");
+             });
+         
+         })
+      })
+    </script>
+</body>
+</html>

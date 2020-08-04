@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop</title>
+
+    <style>
+   .first{
+       height: 100px;
+       width: 20%;
+       background: red;
+       margin: auto;
+       position: relative;
+   }
+   button{
+       cursor: pointer;
+   }
+ 
+    </style>
+
+</head>
+<body>
+    <button>Increase Height</button>
+    <button class="Decrease">Decrease Height</button>
+    <button>Stop</button>
+<div class="first"></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          $("button:first").click(function(){
+              $(".first").animate({height: '+=170'},2000);
+          })
+
+          $(".Decrease").click(function(){
+              $(".first").animate({height: '-=170'},2000);
+          })
+
+          $("button:last").click(function(){
+              $(".first").stop();
+          })
+      })
+    </script>
+</body>
+</html>

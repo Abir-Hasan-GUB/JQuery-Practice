@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show</title>
+</head>
+<body>
+    <h1>Hello World ( Double Click to hide )</h1>
+    <h2>Mouse Enter</h2>
+    <h3>Mouse Leave</h3>
+    <h4>Hover It</h4>
+    <h5>Click to Hide</h5>
+
+   <p>Focus Event: <input type="text" name="" id="focus"> </p>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+       $(document).ready(function(){
+        $("h1").dblclick(function(){ //double click event
+            $(this).hide(2000);
+        })
+        $("h2").mouseenter(function(){ //mouse enter event
+            $(this).hide(2000);
+        })
+
+        $("h3").mouseleave(function(){ //mouse leave event
+            $(this).hide(2000);
+        })
+
+        $("h4").hover(function(){ //hover event
+            $(this).hide(2000) //first event
+        },
+            function(){ // second or last event
+                $(this).show(2000)
+            }
+        )
+
+        $("#focus").focus(function(){ //focus event
+            $(this).css('background','red')
+        })
+        $("h5").on("click",function(){
+            $(this).hide('slow');
+        })
+
+       })
+    </script>
+</body>
+</html>

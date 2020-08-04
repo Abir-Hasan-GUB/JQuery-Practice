@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+
+    <style>
+   .first{
+       height: 100px;
+       width: 20%;
+       background: red;
+       margin: auto;
+       position: relative;
+   }
+ 
+    </style>
+
+</head>
+<body>
+    <button>Click Here</button>
+<div class="first"></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          $("button").click(function(){
+              $(".first").animate({height: '+=70'});
+          })
+      })
+    </script>
+</body>
+</html>

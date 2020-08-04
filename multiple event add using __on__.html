@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show</title>
+</head>
+<body>
+    
+    <h1>Multiple Event Here Used</h1>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          $("h1").on({ // multiple event add using on function
+              dblclick: function(){
+                  $(this).css('color','yellow');
+              },
+              mouseenter: function(){
+                $(this).css('background','red');
+              },
+              mouseleave: function(){
+                  $(this).css('background','green');
+              }
+          })
+      })
+    </script>
+</body>
+</html>
