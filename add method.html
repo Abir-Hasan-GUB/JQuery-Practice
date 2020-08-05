@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+
+    <style>
+ 
+    </style>
+
+</head>
+<body> 
+
+    <button>Click Me</button>
+
+    <h3>Replaced Word</h3>
+    <h2>HTML Format</h2>
+    <h4>After Add Word</h4>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          $("h3").append(" Appended").css("color","red");
+          $("h2").prepend("Prepend ").css("color","lime");
+          $("h4").after("After Added ").css("color","red");
+        })
+      })
+    </script>
+</body>
+</html>

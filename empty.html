@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty</title>
+
+    <style>
+ .mango{
+     background: red;
+     height: 200px;
+     width: 50%;
+ }
+    </style>
+
+</head>
+<body> 
+
+    <button>Click Me</button>
+<div class="mango">
+    
+    <h1>Please <i>in This</i>  Area</h1>
+    <h3>Replaced Word</h3>
+    <h2>HTML Format</h2>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+           $(".mango").empty();
+       
+        })
+      })
+    </script>
+</body>
+</html>

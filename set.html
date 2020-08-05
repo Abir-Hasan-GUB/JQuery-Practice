@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+
+    <style>
+ 
+    </style>
+
+</head>
+<body> 
+
+    <button>Click Me</button>
+
+    <h1>Please <i>in This</i>  Area</h1>
+    <h3>Replaced Word</h3>
+    <h2>HTML Format</h2>
+    <input type="text" value="Primary Value">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          $("h3").text("Text Replaced with Text method").css("color","red");
+          $("h2").html("<i>Man Is Mortal</i>").css("color","blue");
+          $("input").val("Replaced Value").css("background","orange");
+       
+        })
+      })
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comonCSS.css">
+    <title>Parents Method</title>
+
+    <style>
+        .p,h1,ul,li,p,h2{
+            border: 2px solid red;
+            padding: 10px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="p">Main Div
+        <h1> Heder </h1>
+        <h2> Second Heder
+            <ul>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+            </ul>
+        </h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>.
+    <script>
+       $(document).ready(function(){
+          $(".p").parentsUntil("h2").css("border","4px solid green");
+       })
+    </script>
+</body>
+</html>

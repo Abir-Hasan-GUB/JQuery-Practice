@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get</title>
+
+    <style>
+ 
+    </style>
+
+</head>
+<body> 
+
+    <button>Click Me</button>
+
+    <h1>Please <i>in This</i>  Area</h1>
+    <h3>Replaced Word</h3>
+    <h2>HTML Format</h2>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+           var text = $("h1").text(); //get text
+           var html = $("h1").html(); // get html
+           $("h3").text(text).css("color","red"); //set text
+           $("h2").text(html).css("color","orange"); // set html
+       
+        })
+      })
+    </script>
+</body>
+</html>
